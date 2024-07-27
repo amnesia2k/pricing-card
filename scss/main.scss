@@ -1,0 +1,22 @@
+// custom variables
+$primary: #c7c6c6;
+$light: #ffffff;
+$dark: #000;
+
+
+// import functions and variables sass
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+$custom-spacers: (
+  6: $spacer * 3.5,
+  7: $spacer * 4,
+  8: $spacer * 4,
+  9: $spacer * 6,
+  10: $spacer * 7,
+);
+
+$spacers: map-merge($custom-spacers, $spacers);
+
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
